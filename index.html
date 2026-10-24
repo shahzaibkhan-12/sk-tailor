@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SK Tailor Shop | Custom Stitching</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#home" class="logo">SK <span>TAILOR</span></a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#designs">Designs</a>
+            <a href="#order">Order Now</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="tagline">STYLE • COMFORT • QUALITY</p>
+                <h1>Your Style,<br><span>Your Perfect Fit.</span></h1>
+                <p>
+                    Welcome to SK Tailor Shop. We provide custom
+                    stitching with attention to your size, style,
+                    and perfect fitting.
+                </p>
+                <a href="#order" class="btn">Place Your Order</a>
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=900&q=85"
+                    alt="Professional tailoring and clothing"
+                >
+            </div>
+        </section>
+
+        <section class="section" id="services">
+            <p class="tagline">WHAT WE OFFER</p>
+            <h2>Our Services</h2>
+
+            <div class="service-grid">
+                <article class="service-card">
+                    <div class="service-icon">✂️</div>
+                    <h3>Custom Stitching</h3>
+                    <p>Clothes stitched according to your measurements.</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">👔</div>
+                    <h3>Men's Clothing</h3>
+                    <p>Stylish men's outfits with comfortable fitting.</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">📏</div>
+                    <h3>Perfect Fitting</h3>
+                    <p>Careful measurements and quality finishing.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section designs-section" id="designs">
+            <p class="tagline">FIND YOUR STYLE</p>
+            <h2>Choose Your Design</h2>
+            <p class="section-description">
+                Select a style to see your choice.
+            </p>
+
+            <div class="design-grid">
+                <button class="design-card" data-design="Classic Shalwar Qameez">
+                    <img
+                        src="https://images.unsplash.com/photo-1597983073493-88cd35cf93b0?auto=format&fit=crop&w=600&q=80"
+                        alt="Traditional clothing style"
+                    >
+                    <span>Classic Shalwar Qameez</span>
+                </button>
+
+                <button class="design-card" data-design="Modern Men's Outfit">
+                    <img
+                        src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=600&q=80"
+                        alt="Modern men's outfit"
+                    >
+                    <span>Modern Men's Outfit</span>
+                </button>
+
+                <button class="design-card" data-design="Custom Design">
+                    <img
+                        src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=600&q=80"
+                        alt="Clothing design inspiration"
+                    >
+                    <span>Custom Design</span>
+                </button>
+            </div>
+
+            <p id="design-message" class="message" aria-live="polite">
+                No design selected yet.
+            </p>
+        </section>
+
+        <section class="section order-section" id="order">
+            <p class="tagline">LET'S GET STARTED</p>
+            <h2>Place Your Order</h2>
+            <p class="section-description">
+                Enter your details and choose your stitching service.
+            </p>
+
+            <form id="order-form">
+                <label for="customer-name">Your Name</label>
+                <input
+                    type="text"
+                    id="customer-name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <label for="customer-phone">Phone Number</label>
+                <input
+                    type="tel"
+                    id="customer-phone"
+                    placeholder="Enter your phone number"
+                    required
+                >
+
+                <label for="service">Choose Service</label>
+                <select id="service" required>
+                    <option value="">Select a service</option>
+                    <option value="Simple Stitching">Simple Stitching</option>
+                    <option value="Shalwar Qameez">Shalwar Qameez</option>
+                    <option value="Custom Design">Custom Design</option>
+                </select>
+
+                <label for="measurements">Measurements / Instructions</label>
+                <textarea
+                    id="measurements"
+                    placeholder="Enter your size or special instructions"
+                    rows="4"
+                ></textarea>
+
+                <button type="submit" class="btn submit-btn">
+                    Submit Order
+                </button>
+            </form>
+
+            <div id="order-result" class="order-result" hidden aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#home" class="logo">SK <span>TAILOR</span></a>
+        <p>Custom stitching. Quality work. Perfect fitting.</p>
+        <p>&copy; <span id="year"></span> SK Tailor Shop. All rights reserved.</p>
+    </footer>
+
+    <button id="top-button" aria-label="Back to top" title="Back to top">
+        ↑
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
